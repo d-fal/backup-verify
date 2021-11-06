@@ -1,4 +1,4 @@
-# backup-verify
+# backup-verify [![Build Status](https://cloud.drone.io/api/badges/d-fal/backup-verify/status.svg)](https://cloud.drone.io/d-fal/backup-verify) [![codecov](https://codecov.io/gh/d-fal/backup-verify/branch/main/graph/badge.svg?token=MDn8ffuCnQ)](https://codecov.io/gh/d-fal/backup-verify)
 
 This application compares two dumps of any database rows without imposing unnecessary computational and memory load to the host machine.
 

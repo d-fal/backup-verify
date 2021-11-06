@@ -12,7 +12,7 @@ Comparing two gigantic json files, specially when they become large in size is n
 
 In this project, we have created a simplified streamer that starts reading a file and sends json blocks one by one.
 
-> Note: we are aware that tools like [Automni](https://github.com/vladimirvivien/automi) would fulfil our goal, however we implemented by ourselves because we found it super pedantic.
+> Note: we are aware that tools like [Automi](https://github.com/vladimirvivien/automi) would fulfil our goal, however we implemented by ourselves because we found it super pedantic.
 
 ### Preparing streamer :
 

@@ -6,7 +6,7 @@ steps:
   - name: test
     image: golang:1.16
     commands:
-      - go run . --source ./sample/original.json --destination ./sample/duplicate.json
+      - go test -v -coverprofile=coverage.txt -covermode=atomic ./...
   - name: coverage
     image: plugins/codecov
     settings:

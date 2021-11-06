@@ -6,7 +6,7 @@ steps:
   - name: test
     image: golang:1.16
     commands:
-      - go run . --source ./sample/original.json --destination ./sample/duplicate.sjon
+      - go run . --source ./sample/original.json --destination ./sample/duplicate.json
   - name: coverage
     image: plugins/codecov
     settings:

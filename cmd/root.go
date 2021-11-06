@@ -64,7 +64,7 @@ func (c *command) run(cmd *cobra.Command, args []string) {
 	}
 
 	if !match {
-		wlog.Fatalf("%s and %s are not matched\n", aurora.Red(src), aurora.Yellow(dst))
+		wlog.Printf("%s and %s are not matched\n", aurora.Red(src), aurora.Yellow(dst))
 	}
 
 }

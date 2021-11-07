@@ -17,14 +17,16 @@ In this project, we have created a simplified streamer that starts reading a fil
 ### Preparing streamer :
 
 ```go
-	streamer, err := streamming.NewStreamer(path)
+
+    streamer, err := streamming.NewStreamer(path)
 	if err != nil {
 		// take an action
     }
 
     // streaming blocks
     decoder, err := streamer.Stream()
-	for {
+
+	for { // forever loop that would be broken inside
 
 		block, ok := decoder.Next()
 		if !ok {
@@ -33,7 +35,6 @@ In this project, we have created a simplified streamer that starts reading a fil
 
         fmt.Println(block) // data block derived from json file
 	}
-
 
 ```
 

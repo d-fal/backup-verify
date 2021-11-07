@@ -64,3 +64,7 @@ In the case you want to store diff data to a file, add the `--diff-path` flag an
    $ ./bverify --source ./sample/original.json --destination ./sample/duplicate.json --diff-path ./out.txt
 
 ```
+
+## Room for improvement
+
+Currently, we are using a single process to run the app. In order to improve the performance of the app, I would suggest add concurrency to the app. However, using resources should be taken with full alacrity of devouring resources.

@@ -25,6 +25,11 @@ func Start(original, duplicate string, opts ...Opt) (bool, error) {
 	}
 
 	decoder, err := origStreamer.Stream()
+
+	if err != nil {
+		return false, err
+	}
+
 	for {
 
 		block, ok := decoder.Next()

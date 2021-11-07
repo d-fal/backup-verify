@@ -40,3 +40,27 @@ In this project, we have created a simplified streamer that starts reading a fil
 ### Comparing two objects
 
 `reflection` is one of the life savers when we want to compare two structs. However, using `reflection` is costly specially in heavy duty operations such as `n^2` search. To lessen the reflection pain, we have adopted [`go-cmp`](https://github.com/google/go-cmp) instead.
+
+### CLI
+
+build the app via
+
+```bash
+    make build
+```
+
+then run the app in the following way:
+
+```bash
+   $ ./bverify --source [YOUR SOURCE FILE] --destination [THE PATH TO DUMP FILE]
+
+```
+
+In the case you want to store diff data to a file, add the `--diff-path` flag and provide it with the destination of the intended diff file.
+
+## Example run:
+
+```bash
+   $ ./bverify --source ./sample/original.json --destination ./sample/duplicate.json --diff-path ./out.txt
+
+```
